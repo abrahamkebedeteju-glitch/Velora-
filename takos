@@ -1,0 +1,14 @@
+let total = 0;
+
+function addToCart(price) {
+  total += price;
+  document.getElementById("total").innerText = total;
+  alert("Added to cart!");
+}
+
+function submitOrder(event) {
+  event.preventDefault();
+  alert("Thank you! Your order has been placed 🌸");
+  total = 0;
+  document.getElementById("total").innerText = total;
+}
